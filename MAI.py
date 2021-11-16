@@ -25,7 +25,7 @@ try:
             if i < hz2:
                 count = count * matrex[hz][i]
             else:
-                count = count * (1 / matrex[hz][i])  # Заполнение верхней диагонали матрицы зеркально числами 1/aij
+                count = count * (1 / matrex[hz][i])  # Заполнение над диагональю матрицы зеркально числами 1/aij
         multiplication.append(count)  # Произведения всех чисел одной строки
         root.append(pow(multiplication[g], 1 / k_number))  # Корни произведений всех чисел одной строки
         root_summ += root[g]  # Сумма корней произведений всех чисел одной строки
